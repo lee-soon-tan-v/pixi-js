@@ -1,20 +1,16 @@
 {
-  "name": "my-pixi-game",
+  "name": "pixijs-vite",
   "version": "1.0.0",
-  "source": "src/index.html",                
+  "description": "PixiJS v7 project with Vite",
   "scripts": {
-    "start": "parcel --dist-dir dist",   
-    "build": "parcel build --dist-dir dist"  
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "pixi.js": "^7.4.0"
   },
   "devDependencies": {
-    "parcel": "^2.12.0"                   
-  },
-  "targets": {
-    "default": {
-      "distDir": "./dist"
-    }
+    "vite": "^4.5.0"
   }
 }
