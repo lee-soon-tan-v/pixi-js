@@ -1,16 +1,20 @@
 {
-  "name": "pixijs-parcel",
+  "name": "my-pixi-game",
   "version": "1.0.0",
-  "description": "PixiJS v7 project with Parcel",
+  "source": "src/index.html",                
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url ./"
+    "start": "parcel --dist-dir dist",   
+    "build": "parcel build --dist-dir dist"  
   },
   "dependencies": {
     "pixi.js": "^7.4.0"
   },
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0"                   
   },
-  "browserslist": ">0.5%, last 2 versions, not dead"
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  }
 }
